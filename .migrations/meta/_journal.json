@@ -8,6 +8,13 @@
       "when": 1725925762191,
       "tag": "0000_low_moonstone",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1725926204036,
+      "tag": "0001_yellow_absorbing_man",
+      "breakpoints": true
     }
   ]
 }
