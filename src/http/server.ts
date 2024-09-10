@@ -6,6 +6,7 @@ import {
   type ZodTypeProvider,
 } from "fastify-type-provider-zod"
 import z from "zod"
+import { getWeekPendingGoals } from "../functions/get-week-pending-goals"
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -31,6 +32,11 @@ app.post(
     })
   }
 )
+
+app.get("/pending-goals", async () => {
+  const { pendingGoals } = await getWeekPendingGoals()
+  return { pendingGoals }
+})
 
 app
   .listen({
