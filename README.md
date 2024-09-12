@@ -114,20 +114,26 @@ npm run dev
 **RESPONSE**
 ```json
 {
-  "pendingGoals": [
-    {
-      "id": "cm0zcu8w1000108jyc2u8hm5y",
-      "title": "Dormir cedo",
-      "desiredWeeklyFrequency": 5,
-      "completionCount": 1
-    },
-    {
-      "id": "cm0zcwj7h000208jy467n9k4k",
-      "title": "Estudar",
-      "desiredWeeklyFrequency": 5,
-      "completionCount": 0
-    },
-  ]
+    "summary": {
+        "totalCompletions": 2,
+        "totalDesiredFrequency": 10,
+        "completionsByDate": {
+            "2024-09-09": [
+                {
+                    "id": "cm0zcwj7h000208jy467n9k4k",
+                    "title": "Estudar",
+                    "createdAt": "2024-09-09T03:00:00+00:00",
+                },
+                {
+                    "id": "cm0zcwj7h000208jy467n9k4k",
+                    "title": "Estudar",
+                    "createdAt": "2024-09-09T12:00:00+00:00",
+                },
+            ]
+            
+        }
+
+    }
 }
 ```
 
