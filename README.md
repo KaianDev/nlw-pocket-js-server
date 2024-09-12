@@ -28,8 +28,8 @@ git clone https://github.com/KaianDev/nlw-pocket-js-server.git
 
 - Inicia sua aplicação com os comandos abaixo:
 ```bash
-d nlw-pocket-js-server/
-pnpm i
+cd nlw-pocket-js-server/
+npm install
 ```
 
 <h3>Iniciando o container do banco de dados e populando o banco de dados</h3>
