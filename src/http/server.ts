@@ -8,6 +8,7 @@ import {
 import { createGoalRoute } from "./routes/create-goal"
 import { CreateGoalCompletionRoute } from "./routes/create-goal-completion"
 import { getWeekPendingGoalsRoute } from "./routes/get-week-pending-goals"
+import { getWeeklyGoalsSummaryRoute } from "./routes/get-weekly-goals-summary"
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -17,6 +18,7 @@ app.setValidatorCompiler(validatorCompiler)
 app.register(createGoalRoute)
 app.register(CreateGoalCompletionRoute)
 app.register(getWeekPendingGoalsRoute)
+app.register(getWeeklyGoalsSummaryRoute)
 
 app
   .listen({
