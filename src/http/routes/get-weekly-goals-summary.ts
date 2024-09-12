@@ -5,7 +5,7 @@ export const getWeeklyGoalsSummaryRoute: FastifyPluginAsyncZod = async (
   app
 ) => {
   app.get("/summary", async () => {
-    const results = await getWeeklyGoalsSummary()
-    return results
+    const { summary } = await getWeeklyGoalsSummary()
+    return { summary }
   })
 }
