@@ -105,7 +105,7 @@ npm run dev
 **REQUEST BODY**
 ```json
 {
-  "goalId": cm0zcwj7h000208jy467n9k4k,
+  "goalId": "cm0zcwj7h000208jy467n9k4k",
 }
 ```
 
